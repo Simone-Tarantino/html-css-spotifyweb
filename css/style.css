@@ -7,7 +7,7 @@
 }
 
 .nav-padding-l {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 /* body */
@@ -45,24 +45,24 @@ main {
 .main-nav a {
   text-decoration: none;
 }
+.main-nav ul li {
+  list-style: none;
+}
 
 /* nav superiore */
 
 .main-nav-top {
-  background-color: red;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 .main-nav-top ul li {
   list-style: none;
+  margin-top: 5px;
 }
 
 /* logo nav top */
 
-.nav-logo {
-  background-color: yellow;
-}
 .nav-logo img {
   height: 50px;
 }
@@ -70,8 +70,13 @@ main {
 /* menu nav top */
 
 .nav-menu {
-  background-color: lightgreen;
+  margin-top: 20px;
 }
+
+.nav-menu ul li {
+  margin-top: 10px;
+}
+
 .nav-menu ul li:first-child {
   border-left: 2px solid #1CD964;
 }
@@ -80,48 +85,75 @@ main {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  color: #A3A3A3;
 }
 .nav-menu ul li a img {
   height: 25px;
   margin-right: 2px;
+  opacity: 0.6;
+}
+.nav-menu ul li a img:first-child {
+  opacity: 1;
 }
 
 /* nav centrale playlist */
 
-.main-nav-playlist-title {
-  background-color: gold;
-}
 .main-nav-playlist-title h4 {
   text-transform: uppercase;
+  color: #FFF;
+  margin-top: 20px;
 }
-.main-nav-playlist-title a {
+.new-playlist-btn-container {
+  margin-top: 10px;
+}
+.new-playlist-btn-container a {
   text-transform: capitalize;
+  color: #A3A3A3;
+}
+.new-playlist-btn-container i {
+  background-color: #A3A3A3;
+  font-size: 20px;
+  padding: 10px 11px;
+  color: #070707;
 }
 
 /* - */
 
 .main-nav-playlist {
-  background-color: green;
   width: 100%;
   flex-grow: 2;
   min-height: 100px;
   overflow-y: auto;
 }
-
-.main-nav-playlist h4 {
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
 .main-nav-playlist li {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+.main-nav-playlist ul li a {
+  color: #A3A3A3;
 }
 
 /* nav inferiore profilo */
 
 .main-nav-bot {
-  background-color: pink;
   width: 100%;
+  padding-left: 15px;
+}
+.main-nav-bot img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.download-app-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #A3A3A3;
+  margin-right: 15px;
+  padding-bottom: 10px;
+}
+.download-app-nav a {
+  color: #A3A3A3;
 }
 
 /* zona main destra */
