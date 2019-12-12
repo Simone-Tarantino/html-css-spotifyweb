@@ -13,9 +13,8 @@
 /* body */
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 .webapp-container {
@@ -43,6 +42,9 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
+.main-nav a {
+  text-decoration: none;
+}
 
 /* nav superiore */
 
@@ -52,6 +54,11 @@ main {
   display: flex;
   flex-direction: column;
 }
+.main-nav-top ul li {
+  list-style: none;
+}
+
+/* logo nav top */
 
 .nav-logo {
   background-color: yellow;
@@ -59,6 +66,8 @@ main {
 .nav-logo img {
   height: 50px;
 }
+
+/* menu nav top */
 
 .nav-menu {
   background-color: lightgreen;
@@ -71,20 +80,41 @@ main {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  text-decoration: none;
 }
 .nav-menu ul li a img {
   height: 25px;
   margin-right: 2px;
 }
 
-
 /* nav centrale playlist */
+
+.main-nav-playlist-title {
+  background-color: gold;
+}
+.main-nav-playlist-title h4 {
+  text-transform: uppercase;
+}
+.main-nav-playlist-title a {
+  text-transform: capitalize;
+}
+
+/* - */
 
 .main-nav-playlist {
   background-color: green;
   width: 100%;
   flex-grow: 2;
+  min-height: 100px;
+  overflow-y: auto;
+}
+
+.main-nav-playlist h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main-nav-playlist li {
+  margin-top: 10px;
 }
 
 /* nav inferiore profilo */
