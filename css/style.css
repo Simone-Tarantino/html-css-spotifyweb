@@ -6,10 +6,16 @@
   box-sizing: border-box;
 }
 
+.nav-padding-l {
+  padding-left: 10px;
+}
+
 /* body */
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .webapp-container {
@@ -38,6 +44,8 @@ main {
   justify-content: space-between;
 }
 
+/* nav superiore */
+
 .main-nav-top {
   background-color: red;
   width: 100%;
@@ -45,11 +53,41 @@ main {
   flex-direction: column;
 }
 
+.nav-logo {
+  background-color: yellow;
+}
+.nav-logo img {
+  height: 50px;
+}
+
+.nav-menu {
+  background-color: lightgreen;
+}
+.nav-menu ul li:first-child {
+  border-left: 2px solid #1CD964;
+}
+.nav-menu ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-menu ul li a img {
+  height: 25px;
+  margin-right: 2px;
+}
+
+
+/* nav centrale playlist */
+
 .main-nav-playlist {
   background-color: green;
   width: 100%;
   flex-grow: 2;
 }
+
+/* nav inferiore profilo */
 
 .main-nav-bot {
   background-color: pink;
