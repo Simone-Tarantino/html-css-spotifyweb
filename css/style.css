@@ -245,6 +245,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-right: 30px;
+  flex-wrap: nowrap;
 }
 
 .footer-song-artist a.artist-name {
@@ -255,11 +256,8 @@ footer {
 /* footer centrale */
 
 .footer-player {
-  background-color: green;
   height: 100%;
   width: 600px;
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-player-btns {
@@ -268,7 +266,15 @@ footer {
   justify-content: center;
   align-items: center;
   height: 50%;
-  border: 1px solid red;
+}
+
+.footer-player-btns a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.play-btn {
+  font-size: 30px;
 }
 
 .footer-player-bar {
@@ -277,13 +283,57 @@ footer {
   justify-content: center;
   align-items: center;
   height: 50%;
-  border: 1px solid black;
+}
+
+.player-bar {
+  background-color: #888888;
+  width: 70%;
+  height: 4px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.player-bar-progress {
+  background-color: #FFF;
+  width: 30%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.song-time {
+  font-size: 9px;
+  padding: 0 10px;
+  color: #FFF;
 }
 
 /* footer right */
 
 .footer-volume {
-  background-color: gold;
   height: 100%;
-  width: 250px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.volume-bar {
+  background-color: #888888;
+  width: 120px;
+  height: 4px;
+  border-radius: 20px;
+  display: flex;
+  margin-left: 15px;
+}
+
+.volume-bar-progress {
+  width: 100px;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #FFF;
+}
+
+.footer-volume a {
+  margin-left: 15px;
+  color: #FFF;
 }
