@@ -235,6 +235,8 @@ main {
 .main-content-nav ul {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .main-content-nav ul li a {
   text-transform: uppercase;
@@ -455,6 +457,10 @@ footer {
 
   .img-title-track {
     flex-basis: calc(100% / 4);
+  }
+
+  .main-content-nav {
+
   }
 
 }
