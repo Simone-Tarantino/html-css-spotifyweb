@@ -70,19 +70,23 @@ main {
 
 /* logo nav top */
 
-.nav-logo img {
+.display-lg-md-s {
   height: 50px;
   margin-top: 12px;
+}
+
+.display-xs {
+  display: none;
 }
 
 /* menu nav top */
 
 .nav-menu {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .nav-menu ul li {
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .nav-menu ul li:first-child {
@@ -95,13 +99,22 @@ main {
   align-items: center;
   color: #A3A3A3;
 }
+.nav-menu ul li a:hover {
+  color: #fff;
+}
 .nav-menu ul li a img {
   height: 25px;
   margin-right: 2px;
   opacity: 0.6;
 }
-.nav-menu ul li a img:first-child {
+.nav-menu ul li a:hover img {
   opacity: 1;
+}
+.nav-menu .nav-selected-img a img {
+  opacity: 1;
+}
+.nav-menu .nav-selected-img a {
+  color: #FFF;
 }
 
 /* nav centrale playlist */
@@ -117,6 +130,12 @@ main {
 .new-playlist-btn-container a {
   text-transform: capitalize;
   color: #A3A3A3;
+}
+.new-playlist-btn-container a:hover {
+  color: #FFF;
+}
+.new-playlist-btn-container a:hover i {
+  background-color: #FFF;
 }
 .new-playlist-btn-container i {
   background-color: #A3A3A3;
@@ -138,6 +157,9 @@ main {
 }
 .main-nav-playlist ul li a {
   color: #A3A3A3;
+}
+.main-nav-playlist ul li a:hover {
+  color: #FFF;
 }
 
 /* nav inferiore profilo */
@@ -165,6 +187,9 @@ main {
 .download-app-nav a {
   color: #A3A3A3;
 }
+.download-app-nav a:hover {
+  color: #FFF;
+}
 /* nav inferiore zona profilo */
 
 .profile-nav-bot {
@@ -176,6 +201,9 @@ main {
 }
 .profile-nav-bot a {
   color: #A3A3A3;
+}
+.profile-nav-bot a:hover {
+  color: #FFF;
 }
 .profile-nav-bot a img {
   background: grey;
@@ -206,6 +234,11 @@ main {
   padding: 10px 30px;
   text-transform: uppercase;
   border-radius: 20px;
+}
+.upgrade-nav a:hover {
+  padding: 15px 35px;
+  border-radius: 40px;
+  font-size: 16px;
 }
 
 /* zona contenuto */
@@ -458,11 +491,6 @@ footer {
   .img-title-track {
     flex-basis: calc(100% / 4);
   }
-
-  .main-content-nav {
-
-  }
-
 }
 
 @media all and (min-width: 670px) and (max-width: 768px) {
@@ -497,10 +525,40 @@ footer {
   }
 
   .main-nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
   }
 
+  .main-content {
+    width: calc(100% - 60px);
+  }
+
+  .upgrade-nav {
+    width: calc(100% - 60px);
+  }
+
+  .nav-logo {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 60px;
+  }
+
+  .nav-logo a {
+    display: flex;
+    align-items: center;
+  }
+
+  .display-xs {
+    display: inline-block;
+    width: 35px;
+  }
+
+  .display-lg-md-s {
+    display: none;
+  }
+
+  .main-nav-bot img {
+    height: auto;
+    margin: 0;
+  }
 }
