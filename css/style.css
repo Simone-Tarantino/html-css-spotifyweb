@@ -492,4 +492,15 @@ footer {
     flex-basis: calc(100% / 2);
   }
 
+  .main-nav {
+    width: 60px;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
 }
