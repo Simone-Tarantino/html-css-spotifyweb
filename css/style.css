@@ -277,6 +277,9 @@ main {
   padding: 0 10px;
   color: #A3A3A3;
 }
+.main-content-nav ul li a:hover {
+  color: #FFF;
+}
 
 .active-link {
   display: flex;
@@ -382,12 +385,18 @@ footer {
 .footer-song-info > a {
   margin-right: 8px;
 }
+.footer-song-info > a:hover {
+  color: #FFF;
+}
 
 .footer-song-artist a {
   display: flex;
   flex-direction: column;
   margin-right: 30px;
   flex-wrap: nowrap;
+}
+.footer-song-artist a:hover {
+  text-decoration: underline;
 }
 
 .footer-song-artist a.artist-name {
@@ -417,6 +426,9 @@ footer {
 .play-btn {
   font-size: 30px;
 }
+.play-btn:hover {
+  font-size: 35px;
+}
 
 .footer-player-bar {
   display: flex;
@@ -439,7 +451,23 @@ footer {
   width: 30%;
   height: 100%;
   border-radius: 20px;
+  position: relative;
 }
+.player-bar-progress:hover {
+  background-color: #1CD964;
+}
+
+.player-bar-progress i {
+  position: absolute;
+  color: #FFF;
+  bottom: -5px;
+  left: 120px;
+  display: none;
+}
+.player-bar-progress:hover i {
+  display: inline-block;
+}
+
 
 .song-time {
   font-size: 9px;
@@ -472,6 +500,20 @@ footer {
   height: 4px;
   border-radius: 20px;
   background-color: #FFF;
+  position: relative;
+}
+.volume-bar:hover .volume-bar-progress {
+  background-color: #1CD964;
+}
+.volume-bar-progress i {
+  position: absolute;
+  color: #FFF;
+  bottom: -5px;
+  left: 94px;
+  display: none;
+}
+.volume-bar-progress:hover i {
+  display: inline-block;
 }
 
 .footer-volume a {
