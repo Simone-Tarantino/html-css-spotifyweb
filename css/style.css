@@ -34,21 +34,21 @@ body {
 /* main */
 
 main {
+  height: calc(100% - 90px);
   display: flex;
   flex-direction: row;
-  height: calc(100% - 90px);
   overflow: hidden;
 }
 
 /* zona main sinistra */
 
 .main-nav {
-  width: 260px;
   height: 100%;
-  background-color: #070707;
+  width: 260px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
+  background-color: #070707;
 }
 .main-nav a {
   text-decoration: none;
@@ -120,9 +120,9 @@ main {
 /* nav centrale playlist */
 
 .main-nav-playlist-title h4 {
+  margin-top: 20px;
   text-transform: uppercase;
   color: #FFF;
-  margin-top: 20px;
 }
 .new-playlist-btn-container {
   margin-top: 10px;
@@ -138,18 +138,18 @@ main {
   background-color: #FFF;
 }
 .new-playlist-btn-container i {
-  background-color: #A3A3A3;
-  font-size: 20px;
   padding: 10px 11px;
+  font-size: 20px;
   color: #070707;
+  background-color: #A3A3A3;
 }
 
 /* - */
 
 .main-nav-playlist {
   width: 100%;
-  flex-grow: 2;
   min-height: 100px;
+  flex-grow: 2;
   overflow-y: auto;
 }
 .main-nav-playlist li {
@@ -180,9 +180,9 @@ main {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid #A3A3A3;
   margin-right: 15px;
   padding-bottom: 10px;
+  border-bottom: 1px solid #A3A3A3;
 }
 .download-app-nav a {
   color: #A3A3A3;
@@ -206,34 +206,34 @@ main {
   color: #FFF;
 }
 .profile-nav-bot a img {
-  background: grey;
-  border-radius: 50%;
   height: 30px;
   width: 30px;
+  border-radius: 50%;
+  background-color: grey;
 }
 
 /* zona main destra */
 /* nav upgrade */
 
 .upgrade-nav {
+  height: 70px;
+  width: calc(100% - 260px);
   position: fixed;
   top: 0;
   right: 0;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-  width: calc(100% - 260px);
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 70px;
 }
 .upgrade-nav a {
   margin-right: 20px;
-  color: #fff;
-  text-decoration: none;
-  border: 1px solid #fff;
   padding: 10px 30px;
-  text-transform: uppercase;
+  border: 1px solid #fff;
   border-radius: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
 }
 .upgrade-nav a:hover {
   padding: 15px 35px;
@@ -244,22 +244,22 @@ main {
 /* zona contenuto */
 
 .main-content {
-  background-color: #121212;
   height: 100%;
   width: calc(100% - 260px);
-  overflow-y: scroll;
   padding: 90px 20px 0 20px;
+  overflow-y: scroll;
+  background-color: #121212;
 }
 .main-content p {
-  color: #A3A3A3;
   padding-top: 5px;
+  color: #A3A3A3;
 }
 
 /* nav contenuto principale */
 
 .main-content-nav {
-  height: 80px;
   width: 100%;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,14 +267,14 @@ main {
 }
 .main-content-nav ul {
   display: flex;
-  list-style: none;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
 }
 .main-content-nav ul li a {
-  text-transform: uppercase;
-  text-decoration: none;
   padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
   color: #A3A3A3;
 }
 .main-content-nav ul li a:hover {
@@ -287,8 +287,8 @@ main {
   align-items: center;
 }
 .select-border {
-  height: 3px;
   width: 30px;
+  height: 3px;
   background-color: #1CD964;
 }
 
@@ -302,9 +302,9 @@ main {
 }
 
 .img-title-track {
+  flex-basis: calc(100% / 6);
   margin-top: 20px;
   padding-right: 20px;
-  flex-basis: calc(100% / 6);
 }
 .img-title-track img {
   width: 100%;
@@ -315,17 +315,17 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #A3A3A3;
   text-decoration: none;
+  color: #A3A3A3;
 }
 .itt-link h3 {
-  color: #FFF;
-  font-size: 16px;
   margin-top: 10px;
+  font-size: 16px;
+  color: #FFF;
 }
 .itt-link p {
-  font-size: 12px;
   margin-top: 5px;
+  font-size: 12px;
 }
 
 .itt-long-text {
@@ -359,16 +359,16 @@ main {
 footer {
   width: 100%;
   height: 90px;
-  background-color: #282828;
   display: flex;
   justify-content: space-between;
+  background-color: #282828;
 }
 
 /* footer sinistra */
 
 .footer-song-info {
-  height: 100%;
   width: 270px;
+  height: 100%;
   display: flex;
   align-items: center;
   padding-left: 15px;
@@ -392,8 +392,8 @@ footer {
 .footer-song-artist a {
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
   flex-wrap: nowrap;
+  margin-right: 30px;
 }
 .footer-song-artist a:hover {
   text-decoration: underline;
@@ -406,21 +406,21 @@ footer {
 /* footer centrale */
 
 .footer-player {
-  height: 100%;
   width: 600px;
+  height: 100%;
 }
 
 .footer-player-btns {
+  height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 50%;
 }
 
 .footer-player-btns a {
-  color: #fff;
   margin: 0 10px;
+  color: #fff;
 }
 
 .play-btn {
@@ -431,86 +431,85 @@ footer {
 }
 
 .footer-player-bar {
+  height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 50%;
 }
 
 .player-bar {
-  background-color: #888888;
   width: 70%;
   height: 4px;
-  border-radius: 20px;
   display: flex;
+  border-radius: 20px;
+  background-color: #888888;
 }
 
 .player-bar-progress {
-  background-color: #FFF;
   width: 30%;
   height: 100%;
-  border-radius: 20px;
   position: relative;
+  border-radius: 20px;
+  background-color: #FFF;
 }
 .player-bar-progress:hover {
   background-color: #1CD964;
 }
 
 .player-bar-progress i {
+  display: none;
   position: absolute;
-  color: #FFF;
   bottom: -5px;
   left: 120px;
-  display: none;
+  color: #FFF;
 }
 .player-bar-progress:hover i {
   display: inline-block;
 }
 
-
 .song-time {
-  font-size: 9px;
   padding: 0 10px;
+  font-size: 9px;
   color: #FFF;
 }
 
 /* footer right */
 
 .footer-volume {
-  height: 100%;
   width: 270px;
+  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 10px;
 }
 
 .volume-bar {
-  background-color: #888888;
   width: 120px;
   height: 4px;
-  border-radius: 20px;
   display: flex;
   margin-left: 15px;
+  border-radius: 20px;
+  background-color: #888888;
 }
 
 .volume-bar-progress {
   width: 100px;
   height: 4px;
+  position: relative;
   border-radius: 20px;
   background-color: #FFF;
-  position: relative;
 }
 .volume-bar:hover .volume-bar-progress {
   background-color: #1CD964;
 }
 .volume-bar-progress i {
-  position: absolute;
-  color: #FFF;
-  bottom: -5px;
-  left: 94px;
   display: none;
+  position: absolute;
+  left: 94px;
+  bottom: -5px;
+  color: #FFF;
 }
 .volume-bar-progress:hover i {
   display: inline-block;
@@ -526,8 +525,8 @@ footer {
 @media all and (min-width: 768px) and (max-width: 1024px) {
 
   .recently-played {
-    flex-wrap: wrap;
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .img-title-track {
@@ -538,8 +537,8 @@ footer {
 @media all and (min-width: 670px) and (max-width: 768px) {
 
   .recently-played {
-    flex-wrap: wrap;
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .img-title-track {
@@ -553,21 +552,37 @@ footer {
     display: none;
   }
 
-  .recently-played {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  .display-xs {
+    width: 35px;
+    display: inline-block;
   }
 
-  .img-title-track {
-    flex-basis: calc(100% / 2);
+  .display-lg-md-s {
+    display: none;
   }
 
   .main-nav {
     width: 60px;
   }
-
   .main-nav ul {
     align-items: flex-start;
+  }
+
+  .main-nav-bot img {
+    height: 25px;
+    margin: 0;
+  }
+
+  .nav-logo {
+    width: 60px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-logo a {
+    display: flex;
+    align-items: center;
   }
 
   .main-content {
@@ -578,29 +593,12 @@ footer {
     width: calc(100% - 60px);
   }
 
-  .nav-logo {
-    display: flex;
-    justify-content: center;
-    height: 70px;
-    width: 60px;
+  .recently-played {
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
-  .nav-logo a {
-    display: flex;
-    align-items: center;
-  }
-
-  .display-xs {
-    display: inline-block;
-    width: 35px;
-  }
-
-  .display-lg-md-s {
-    display: none;
-  }
-
-  .main-nav-bot img {
-    height: auto;
-    margin: 0;
+  .img-title-track {
+    flex-basis: calc(100% / 2);
   }
 }
